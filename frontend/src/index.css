@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+/* Make underlines look consistent */
+a { text-underline-offset: 2px; text-decoration-thickness: 1.5px; }
+
+/* Smooth scrolling for anchor links like #projects */
+html { scroll-behavior: smooth; }
