@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchJson } from "../lib/api";
 import Meta from "../components/Meta.jsx";
 import Card from "../components/Card.jsx";
-import MouseGlow from "../components/RGBFlareCursor.jsx";
-import RGBFlareCursor from "../components/RGBFlareCursor.jsx";
+import FluidSim from "../components/FluidCursorDemo.jsx";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -53,6 +52,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Page meta */}
+
       <Meta
         title="Shams — Django & React Developer"
         description="Portfolio of Django REST + React projects. Clean APIs, tidy UIs, and a working contact form."
@@ -60,8 +60,7 @@ export default function Home() {
 
       {/* Hero */}
 
-      <section className="bg-white dark:bg-gray-950 border-b dark:border-gray-800">
-        
+      <section className="bg-white dark:bg-gray-950 border-b dark:border-gray-800 relative">
         <div className="max-w-5xl mx-auto px-6 py-12 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold">
             Hi, I'm Shams — Django & React Developer

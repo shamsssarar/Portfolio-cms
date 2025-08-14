@@ -9,6 +9,8 @@ import Blog from "./pages/Blog.jsx";
 import Post from "./pages/Post.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import RGBFlareCursor from "./components/RGBFlareCursor.jsx";
+import FluidSim from "./components/FluidCursorDemo.jsx";
+import FluidCursorDemo from "./components/FluidCursorDemo.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,11 +27,12 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RGBFlareCursor
-      size={50}
+    <div className=" hidden dark:block"><RGBFlareCursor
+      size={40}
       intensity="opacity-100"
       color = "#03a0bc"
-    />
+    /></div>
+    <div><FluidCursorDemo  /></div>
     <RouterProvider router={router} />
   </React.StrictMode>
 );

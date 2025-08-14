@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root { height: 100%;}
+html, body, #root { height: 100%; background: transparent;}
 /* Make underlines look consistent */
 a { text-underline-offset: 2px; text-decoration-thickness: 1.5px; }
 
