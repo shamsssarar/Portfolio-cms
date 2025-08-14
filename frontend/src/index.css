@@ -2,9 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root { height: 100%; }
+html, body, #root { height: 100%;}
 /* Make underlines look consistent */
 a { text-underline-offset: 2px; text-decoration-thickness: 1.5px; }
 
 /* Smooth scrolling for anchor links like #projects */
 html { scroll-behavior: smooth; }
+
+
+/* Optional: subtle pulse on movement to make the flare feel lively */
+@keyframes flare-pulse-kf {
+  0% { transform: scale(0.98); filter: blur(28px); }
+  50% { transform: scale(1.02); filter: blur(32px); }
+  100% { transform: scale(1.00); filter: blur(30px); }
+}
+
+.flare-pulse {
+  animation: flare-pulse-kf 1.6s ease-in-out infinite;
+}
+
+/* Helpful: ensure your app sits beneath the flare overlay */
+#root {
+  position: relative;
+  isolation: isolate; /* keeps blend-mode effects contained to the app */
+}
+

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { fetchJson } from "../lib/api";
 import Meta from "../components/Meta.jsx";
 import Card from "../components/Card.jsx";
+import MouseGlow from "../components/RGBFlareCursor.jsx";
+import RGBFlareCursor from "../components/RGBFlareCursor.jsx";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -57,7 +59,9 @@ export default function Home() {
       />
 
       {/* Hero */}
+
       <section className="bg-white dark:bg-gray-950 border-b dark:border-gray-800">
+        
         <div className="max-w-5xl mx-auto px-6 py-12 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold">
             Hi, I'm Shams — Django & React Developer
@@ -108,7 +112,9 @@ export default function Home() {
             ))}
           </div>
         ) : projects.length === 0 ? (
-          <p className="text-gray-600 dark:text-gray-400">No projects yet. Add some in /admin.</p>
+          <p className="text-gray-600 dark:text-gray-400">
+            No projects yet. Add some in /admin.
+          </p>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((p) => (
@@ -144,10 +150,16 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="bg-white dark:bg-gray-950 border-t dark:border-gray-800">
+      <section
+        id="contact"
+        className="bg-white dark:bg-gray-950 border-t dark:border-gray-800"
+      >
         <div className="max-w-5xl mx-auto px-6 py-10">
           <h2 className="text-2xl font-bold mb-4">Contact</h2>
-          <form onSubmit={submitContact} className="grid gap-3 max-w-xl dark:text-black">
+          <form
+            onSubmit={submitContact}
+            className="grid gap-3 max-w-xl dark:text-black"
+          >
             <input
               className="border px-3 py-2 rounded"
               placeholder="Your name"
