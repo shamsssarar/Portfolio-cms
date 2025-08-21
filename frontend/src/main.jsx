@@ -27,12 +27,12 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className=" hidden dark:block"><RGBFlareCursor
+    <div className=" hidden lg:dark:block "><RGBFlareCursor
       size={40}
       intensity="opacity-100"
       color = "#03a0bc"
     /></div>
-    <div><FluidCursorDemo  /></div>
+    <div className="hidden lg:block"><FluidCursorDemo  /></div>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
