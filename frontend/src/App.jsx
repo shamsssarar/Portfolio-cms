@@ -4,7 +4,8 @@ import ThemeToggle from "./components/ThemeToggle.jsx";
 import LetterGlitchBackground from "./components/LetterGlitchBackground.jsx";
 
 export default function App() {
-  const linkBase = "px-2 py-1 rounded transition border border-transparent hover:bg-[#03a0bc] font-bold";
+  const linkBase =
+    "px-2 py-1 rounded transition border border-transparent hover:bg-[#03a0bc] font-bold";
   const linkActive = "font-semibold text-[#03a0bc] hover:bg-transparent ";
 
   return (
@@ -20,11 +21,11 @@ export default function App() {
       />
 
       <header className="px-6 py-4 bg-transparent dark:bg-transparent ">
-        <nav className="max-w-5xl mx-auto flex items-center justify-between gap-4">
-          <Link to="/" className="font-bold">
+        <nav className="max-w-5xl mx-auto flex flex-wrap items-center gap-3">
+          <Link to="/" className="font-bold mr-auto">
             Shams.dev
           </Link>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3 text-sm">
             <NavLink
               to="/"
               end
@@ -50,7 +51,9 @@ export default function App() {
             >
               Blog
             </NavLink>
-            <ThemeToggle />
+          </div>
+          <div className="ml-2 flex-shrink-0">
+            <ThemeToggle size="sm" />
           </div>
         </nav>
       </header>
