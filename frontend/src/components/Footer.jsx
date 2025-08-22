@@ -21,16 +21,16 @@ export default function Footer() {
 
           {/* Socials */}
           <div className="md:ml-auto flex items-center gap-3">
-            <IconLink href="https://github.com/your-username" label="GitHub">
+            <IconLink href="https://github.com/shamsssarar" label="GitHub">
               <FaGithub className="w-5 h-5" />
             </IconLink>
-            <IconLink href="https://www.linkedin.com/in/your-handle" label="LinkedIn">
+            <IconLink href="https://www.linkedin.com/in/shamss-sarar-6652902a7" label="LinkedIn">
               <FaLinkedin className="w-5 h-5" />
             </IconLink>
-            <IconLink href="https://wa.me/yourNumberWithoutPlus" label="WhatsApp">
+            <IconLink href="https://wa.me/8801648186211" label="WhatsApp">
               <FaWhatsapp className="w-5 h-5" />
             </IconLink>
-            <IconLink href="https://instagram.com/your-handle" label="Instagram">
+            <IconLink href="https://instagram.com/shams_sarar" label="Instagram">
               <FaInstagram className="w-5 h-5" />
             </IconLink>
           </div>
