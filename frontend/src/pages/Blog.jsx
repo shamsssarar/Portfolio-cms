@@ -39,7 +39,7 @@ export default function Blog() {
       {posts.length === 0 ? (
         <p className="text-gray-600">No posts yet.</p>
       ) : (
-        <ul className="grid gap-6 md:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 list-none p-0 m-0 w-full">
           {posts.map((p) => (
             <li key={p.id}>
               <BlogListItem post={p} />
