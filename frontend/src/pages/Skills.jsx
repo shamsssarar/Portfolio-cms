@@ -98,9 +98,9 @@ export default function Skills() {
                 <div
                   className="
                   group relative overflow-hidden rounded-xl transition-all duration-200
-                  bg-white/80 dark:bg-slate-800/60 
+                  bg-white/80 dark:bg-slate-900/90 
                   ring-1 ring-slate-200 dark:ring-white/5
-                  hover:ring-[2px] hover:ring-[#03a0bc]/70
+                  hover:ring-[2px] hover:ring-[#03a0bc]/40
                   hover:scale-[1.02] dark:hover:ring-[#03a0bc]/70
                   shadow-sm dark:shadow-none
                   hover:shadow-[0_8px_30px_rgba(2,132,199,0.18)]

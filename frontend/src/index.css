@@ -27,3 +27,37 @@ html { scroll-behavior: smooth; }
   isolation: isolate; /* keeps blend-mode effects contained to the app */
 }
 
+
+:root {
+  --grad1: #0ea5e9;
+  --grad2: #8b5cf6;
+  --grad3: #10b981;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grad1: #60a5fa;
+    --grad2: #a78bfa;
+    --grad3: #34d399;
+  }
+}
+
+.bg-animated {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(60% 60% at 20% 20%, var(--grad1) 0%, transparent 60%),
+              radial-gradient(50% 50% at 80% 30%, var(--grad2) 0%, transparent 60%),
+              radial-gradient(70% 70% at 50% 80%, var(--grad3) 0%, transparent 60%);
+  filter: blur(40px);
+  opacity: 0.55;
+  animation: drift 30s linear infinite alternate;
+}
+
+@keyframes drift {
+  0%   { transform: translate3d(0,0,0) scale(1);   }
+  100% { transform: translate3d(-3%, -2%, 0) scale(1.05); }
+}
+
+

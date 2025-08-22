@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Sun, Moon } from "lucide-react"; // icons
 
 export default function ThemeToggle() {
   const [dark, setDark] = useState(
@@ -20,11 +21,20 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setDark(!dark)}
-      className="px-3 py-1.5 rounded border text-sm hover:bg-gray-50 dark:hover:bg-gray-800 transition"
-      aria-label="Toggle dark mode"
+      className={`relative flex items-center w-16 h-8 rounded-full border border-[#03a0bc] transition-colors 
+        ${dark ? "bg-[#03a0bc]/20" : "bg-[#03a0bc]/10"} 
+      `}
+      aria-label="Toggle theme"
       title="Toggle dark mode"
     >
-      {dark ? "🌙 Dark" : "☀️ Light"}
+      {/* sliding circle */}
+      <span
+        className={`absolute top-1 left-1 w-6 h-6 rounded-full flex items-center justify-center bg-[#03a0bc] text-white transition-all
+          ${dark ? "translate-x-8" : "translate-x-0"}
+        `}
+      >
+        {dark ? <Moon size={16} /> : <Sun size={16} />}
+      </span>
     </button>
   );
 }
