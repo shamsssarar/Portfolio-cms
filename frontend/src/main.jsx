@@ -9,7 +9,6 @@ import Blog from "./pages/Blog.jsx";
 import Post from "./pages/Post.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import RGBFlareCursor from "./components/RGBFlareCursor.jsx";
-import FluidSim from "./components/FluidCursorDemo.jsx";
 import FluidCursorDemo from "./components/FluidCursorDemo.jsx";
 
 const router = createBrowserRouter([

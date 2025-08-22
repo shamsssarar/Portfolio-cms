@@ -3,6 +3,8 @@ import { Link, Outlet, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ThemeToggle from "./components/ThemeToggle.jsx";
 import LetterGlitchBackground from "./components/LetterGlitchBackground.jsx";
+import Footer from "./components/Footer.jsx";
+
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -154,6 +156,7 @@ export default function App() {
       <main className="max-w-5xl mx-auto p-6">
         <Outlet />
       </main>
+      <Footer/>
     </div>
   );
 }
