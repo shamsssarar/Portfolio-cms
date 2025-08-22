@@ -55,7 +55,7 @@ export default function Home() {
       {/* Page meta */}
 
       <Meta
-        title="Shams — Django & React Developer"
+        title="SD"
         description="Portfolio of Django REST + React projects. Clean APIs, tidy UIs, and a working contact form."
       />
 
