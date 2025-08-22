@@ -3,6 +3,7 @@ import { fetchJson } from "../lib/api";
 import Meta from "../components/Meta.jsx";
 import Card from "../components/Card.jsx";
 import Typewriter from "typewriter-effect";
+import shams from "../assets/shams.JPG";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -62,6 +63,33 @@ export default function Home() {
 
       <section className="bg-transparent dark:bg-transparent border-b dark:border-gray-800 relative">
         <div className="max-w-5xl mx-auto px-6 py-12 text-center md:text-left">
+          <div className="flex items-center justify-center md:justify-start mb-6">
+            <div className="relative w-48 h-48 md:w-64 md:h-64">
+              {/* rotating neon ring */}
+              <div
+                className="
+                absolute inset-0 rounded-full opacity-50
+                bg-[conic-gradient(from_0deg,#03a0bc,transparent_60%)]
+                animate-[spin_10s_linear_infinite]
+                blur-[1px]
+              "
+                aria-hidden
+              />
+
+              {/* subtle inner surface so the ring looks separated */}
+              <div
+                className="absolute inset-[3px] rounded-full bg-white/10 dark:bg-slate-900/40 backdrop-blur-sm"
+                aria-hidden
+              />
+
+              {/* image */}
+              <img
+                src={shams}
+                alt="Shams Sarar"
+                className="relative z-10 w-full h-full rounded-full object-cover shadow-xl motion-safe:animate-float"
+              />
+            </div>
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold">
             <Typewriter
               options={{
