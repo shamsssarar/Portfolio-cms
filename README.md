@@ -7,6 +7,8 @@ It showcases my skills, projects, blog posts, and includes a contact form — de
 
 🔗 https://portfolio-sd-i4mb.onrender.com
 
+
+
 ✨ Features
 
 🎨 Modern UI — Animated background, gradient buttons, dark/light mode toggle
@@ -23,7 +25,10 @@ It showcases my skills, projects, blog posts, and includes a contact form — de
 
 ⚡ Fast & Optimized — Built with Vite, Tailwind, and optimized assets
 
+
+
 🛠 Tech Stack
+
 
 Frontend
 
@@ -33,11 +38,13 @@ Tailwind CSS 🎨
 
 Lucide-react icons
 
+
 Backend
 
 Django & Django REST Framework 🐍
 
 PostgreSQL
+
 
 Deployment
 
@@ -45,24 +52,31 @@ Frontend: Render
 
 Backend: Render
 
+
 Database: PostgreSQL
+
 
 📸 Screenshots
 Home
 
 Blog
 
+
+
 🚀 Getting Started
+
 
 Clone the repo:
 
 git clone https://github.com/your-username/portfolio-cms.git
 cd portfolio-cms
 
+
 Frontend Setup
 cd frontend
 npm install
 npm run dev
+
 
 Backend Setup
 cd backend
@@ -73,7 +87,10 @@ python manage.py runserver
 
 Now visit 👉 http://127.0.0.1:8000/ for backend API and http://localhost:5173/ for frontend.
 
+
+
 📬 Contact Me
+
 
 Portfolio: shams.dev
 
@@ -85,8 +102,12 @@ WhatsApp: +8801648186211
 
 Instagram: instagram.com/your-handle
 
+
+
 📄 License
 
 This project is licensed under the MIT License — feel free to use and adapt it.
+
+
 
 ⚡ Built with passion using Django + React
