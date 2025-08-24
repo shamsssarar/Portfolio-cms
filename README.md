@@ -1,5 +1,6 @@
 📌 Shams.dev — Personal Portfolio
 
+
 A modern, responsive portfolio website built with React (Vite), Django REST API, and Tailwind CSS.
 It showcases my skills, projects, blog posts, and includes a contact form — designed with performance and clean UI in mind.
 
