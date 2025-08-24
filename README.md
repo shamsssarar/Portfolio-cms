@@ -58,7 +58,7 @@ Showcases my skills, projects, blog posts, and includes a contact form — desig
 ![Home Screenshot](screenshots/home_light.png)
 
 ### 📖 Blog
-![Blog Screenshot](docs/blog.png)
+![Blog Screenshot](screenshots/blog.png)
 
 ---
 
