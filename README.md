@@ -57,3 +57,15 @@ Showcases my skills, projects, blog posts, and includes a contact form — desig
 ```bash
 git clone https://github.com/shamssarar/Portfolio-cms.git
 cd Portfolio-cms
+
+---
+
+### 2. Backend setup (Django)
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate   # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
